@@ -1,5 +1,13 @@
 html, body{
     font-family: 'Courier New', Courier, monospace;
+    background-image: url("snieg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+
 }
 
 /*div1*/
@@ -17,13 +25,14 @@ html, body{
     animation-iteration-count: infinite;
     border-radius: 10px;
     background-color: red;
+    padding: 1%;
 }
 
 /*div2*/
 @keyframes slide {
     0% {left: 0%;}
-    25% {background-color: #43cea2;}
-    100% {left: calc(100% - 100px); background-color: #185a9d;}
+    /*25% {background-color: #43cea2;}*/
+    100% {left: calc(100% - 100px); /*background-color: #185a9d;*/}
 }
 
 #div2{
@@ -36,13 +45,16 @@ html, body{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     border-radius: 10px;
-    background-color: #43cea2;
+    /*background-color: #43cea2;*/
+    background-image: url("prezent2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*div3*/
 @keyframes slide-rotate {
-    0% {left: 0%; transform: rotate(0); background-color: #7b4397;}
-    100% {left: calc(100% - 100px); transform: rotate(360deg); background-color: #dc2430;}
+    0% {left: 0%; transform: rotate(0); /*background-color: #7b4397;*/}
+    100% {left: calc(100% - 100px); transform: rotate(360deg); /*background-color: #dc2430;*/}
 
 }
 
@@ -56,6 +68,9 @@ html, body{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     border-radius: 10px;
+    background-image: url("bombka.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*div4*/
@@ -73,7 +88,7 @@ html, body{
     justify-content: center;
     margin: 0 auto;
 
-    background-image: url("kolo.png");
+    background-image: url("platek.png");
     background-size: contain;
 }
 
@@ -82,7 +97,7 @@ html, body{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: normal;
-    background-image: url("kolo.png");
+    background-image: url("platek.png");
     animation-timing-function: linear;
 }
 
@@ -122,9 +137,11 @@ html, body{
 
 #div5:hover #hover{
     display: block;
+
 }
 
 
 #div5:hover #normal{
     display: none;
+    background: none;
 }
